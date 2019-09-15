@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`does snapshotting 1`] = `
+<div>
+  <Virtuoso
+    item={[Function]}
+    style={
+      Object {
+        "height": "50vh",
+      }
+    }
+    totalCount={50}
+  />
+</div>
+`;

@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Virtuoso} from 'react-virtuoso';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const virtuoso = null;
+
+    return (
+        <div>
+            <Virtuoso
+                ref={virtuoso}
+                style={{height: "50vh"}}
+                item={index => <div>{index}</div>}
+                totalCount={50}
+            />
+        </div>
+    );
 }
 
 export default App;
